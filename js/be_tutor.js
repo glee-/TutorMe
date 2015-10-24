@@ -1,5 +1,4 @@
-var data =
-[
+var data = [
     {
         "id": 0,
         "name": "test0",
@@ -105,10 +104,4 @@ var data =
         "name": "test20",
         "price": "$20"
     }
-];
-
-$(function () {
-    $('#table').bootstrapTable({
-        data: data
-    });
-});
+]
