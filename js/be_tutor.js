@@ -105,3 +105,28 @@ var data = [
         "price": "$20"
     }
 ]
+
+window.onload = function () {
+for (i = 0; i < data.length; i++) {
+    var ids = document.getElementById("id");
+    var cell = document.createElement("td");
+    var cellText = document.createTextNode(data[i].id)
+
+    var names = document.getElementById("name")
+    var n = document.createElement("td");
+    var nText = document.createTextNode(data[i].name)
+
+    var prices = document.getElementById("price")
+    var p = document.createElement("td");
+    var pText = document.createTextNode(data[i].name)
+
+    cell.appendChild(cellText);
+    ids.appendChild(cell);
+
+    n.appendChild(nText);
+    names.appendChild(n);
+
+    p.appendChild(pText);
+    prices.appendChild(p);
+}
+}
