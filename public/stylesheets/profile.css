@@ -1,0 +1,31 @@
+
+div#title{
+  color: white;
+  font-size: 35px;
+  font-family: 'Quicksand', sans-serif;
+  padding-right: 10px;
+}
+
+div#search{
+  width: 70%;
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+div#forms{
+  width: 40%;
+  position: table;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#buttons {
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,70 @@
+div#title{
+  color: white;
+  font-size: 35px;
+  font-family: 'Quicksand', sans-serif;
+  padding-right: 10px;
+}
+
+div#search{
+  width: 70%;
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+div#buttons{
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.availability {
+    position: relative; width: 161px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    position: table;
+    margin: auto auto;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 26px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 28px; padding: 0; line-height: 28px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Available";
+    padding-left: 10px;
+    background-color: #14D92E; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Unavailable";
+    padding-right: 10px;
+    background-color: #FFFFFF; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 22px; margin: 3px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 129px;
+    border: 2px solid #999999; border-radius: 26px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    title PleaseTutorMe
+    // link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/layout.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/signup.css", type="text/css", media="screen")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    // script src="javascripts/main.js"></script
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700,900|Josefin+Sans:400,700|Quicksand:400,700", rel="stylesheet", type="text/css")
+  body#body
+    // -Section------
+    #section
+      #filter-blue
+        #title
+          | Sign Up
+        form#signUp(name="signup", method="post", action="/signup")
+          #forms
+            .form-group
+              label(for="name", style="color: white;") Name*
+              input#name.form-control(type="text", placeholder="Name", name="name")
+            .form-group
+              label(for="passwordPrompt", style="color: white;") Year*
+              select#year(name="year").form-control
+                option High School
+                option Freshman
+                option Sophomore
+                option Junior
+                option Senior
+                option Graduate
+            .form-group
+              label(for="subjects", style="color: white;") What can you teach? (leave blank if you only seek tutoring)
+              input#subjects.form-control(type="text", placeholder="Computer Science, Statistics, Philosophy, etc.", name="subjects")
+            .form-group
+              label(for="phone", style="color: white;") Phone
+              input#phone.form-control(type="text", placeholder="1234567890", name="phone")
+            .form-group
+              label(for="emailPrompt", style="color: white;") Email*
+              input#username.form-control(type="email", placeholder="Email", name="username")
+            .form-group
+              label(for="passwordPrompt", style="color: white;") Password*
+              input#password.form-control(type="password", placeholder="Password", name="password")
+          #buttons(style="color: white;")
+            a(href="/")
+              button#signup.btn.btn-success.btn-lg(type="submit") Sign Up
+            a(href="/")
+              button#login.btn.btn-danger.btn-lg(type="button") Cancel

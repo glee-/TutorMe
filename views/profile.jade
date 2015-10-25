@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    title Gary Ge
+    script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+    script(src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(type="text/javascript", src="js/bootstrap.min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/layout.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/profile.css", type="text/css", media="screen")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700,900|Josefin+Sans:400,700|Quicksand:400,700", rel="stylesheet", type="text/css")
+  body#body
+    // -Section------
+    #section
+      #filter-blue
+        nav.navbar.navbar-inverse
+          .container-fluid
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+              button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              #title
+                | PleaseTutorMe
+            // Collect the nav links, forms, and other content for toggling
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+              ul.nav.navbar-nav
+                li
+                  a(href="/find_tutor") Find a tutor
+                li
+                  a(href="/be_tutor") Be a tutor
+              ul.nav.navbar-nav.navbar-right
+                li.dropdown.btn-group
+                  a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false")
+                    span.glyphicon.glyphicon-cog(aria-hidden="true")
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href="#") Profile
+                    li.divider(role="separator")
+                    li
+                      a(href="/index") Log Out
+            // /.navbar-collapse
+          // /.container-fluid
+        // -END NAV------
+        #forms
+          fieldset(disabled="")
+            .form-group
+              label(for="name", style="color: white;") Name
+              input#name.form-control(type="text", placeholder="First Last")
+          .form-group
+            label(for="passwordPrompt", style="color: white;") Year
+            select.form-control
+              option High School
+              option Freshman
+              option Sophomore
+              option Junior
+              option Senior
+              option Graduate
+          .form-group
+            label(for="major", style="color: white;") What can you teach? (separate by commas)
+            input#major.form-control(type="text", placeholder="Electrical Engineering, Computer Science, Math")
+          .form-group
+            label(for="text", style="color: white;") Email
+            input#email.form-control(type="email", placeholder="Email")
+          .form-group
+            label(for="passwordPrompt", style="color: white;") Password
+            input#password.form-control(type="password", placeholder="Password")
+        #buttons(style="color: white;")
+          a(href="/find_tutor")
+            button#signup.btn.btn-primary.btn-lg(type="button") Save
+          a(href="/find_tutor")
+            button#login.btn.btn-danger.btn-lg(type="button") Cancel

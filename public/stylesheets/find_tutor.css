@@ -1,0 +1,34 @@
+div#home{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url("../images/Chalkboard.jpg") center top no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div#title{
+  color: white;
+  font-size: 35px;
+  font-family: 'Quicksand', sans-serif;
+  padding-right: 10px;
+}
+
+div#search{
+  width: 70%;
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+div#buttons {
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}

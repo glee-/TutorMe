@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .divider
+    .divider
+    .center.content
+      h1= title
+      .divider
+      a(class="button", href="/tasklist") Back
+      .divider
+      form#formAddUser(name="addtask",method="post",action="/addtask")
+          input#inputTaskName(type="text", size="50", placeholder="Task name", name="taskName")
+          br
+          input#inputTaskTime(type="text", size="50", placeholder="Time it will take in minutes", name="taskTime")
+          br
+          input#inputTaskStart(type="text", size="50",placeholder="Start time", name="taskStart")
+          br
+          select(name='taskDay')
+            each day in ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+              option(value=day)= day
+          br
+          .divider
+          button#btnSubmit(type="submit") submit
+    .divider
+    .divider
+    .divider
+    .divider
+    .divider

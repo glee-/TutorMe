@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    title Gary Ge
+    title Gary Ge
+    // link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/layout.css", type="text/css", media="screen")
+    link(rel="stylesheet", href="/stylesheets/login.css", type="text/css", media="screen")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
+    // script src="javascripts/main.js"></script
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700,900|Josefin+Sans:400,700|Quicksand:400,700", rel="stylesheet", type="text/css")
+  body#body
+    // -Section------
+    #section
+      #filter-blue
+        #title
+          | Log In
+        form#logIn(name="signin", method="post", action="/signin")
+          #forms
+            .form-group
+              label(for="emailPrompt", style="color: white;") Email
+              input#email.form-control(type="email", placeholder="Email", name="username")
+            .form-group
+              label(for="passwordPrompt", style="color: white;") Password
+              input#exampleInputPassword1.form-control(type="password", placeholder="Password", name="password")
+            .checkbox
+              label(style="color: white;")
+                input(type="checkbox")
+                | Remember me
+          #buttons(style="color: white;")
+            a(href="/")
+              button#signup.btn.btn-primary.btn-lg(type="submit") Login
+            a(href="/")
+              button#login.btn.btn-danger.btn-lg(type="button") Cancel

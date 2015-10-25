@@ -1,0 +1,114 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  height: 100%;
+  font: 16px "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #2E2E2E;
+  background-color: #F2F2F2;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+h1 {
+  margin: 0px;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.screen {
+  height: 100vh;
+}
+
+.center {
+  display: table;
+  margin: auto;
+} .content {
+  width: 70%;
+} .content h1 {
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+} .flex-container article:nth-of-type(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.divider {
+  height: 5vh;
+} .filler {
+  background-color: #EBF0F2;
+}
+
+#calendar {
+  background-color: #fff;
+  padding: 15px;
+}
+
+table {
+  border: 0;
+} td {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  border: none;
+} tr {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  border: none;
+} tr.header {
+  background-color: #E81B10;
+  color: #fff;
+} tr:nth-of-type(1) td {
+  padding: 15px;
+}
+.filled {
+  background-color: #BF6662;
+  color: #fff;
+} #time {
+  background-color: #fff;
+  color: #E81B10;
+}
+
+.button {
+  padding: 10px;
+  border: 1px #00B7FF solid;
+  border-radius: 5px;
+} .button:hover {
+  color: #fff;
+  background-color: #00B7FF;
+} .vertical {
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+} .vertical .button {
+  margin-bottom: 15px;
+} li {
+  padding: 6px;
+} li:hover {
+  background-color: #BF6662;
+  color: #fff;
+}
+
+footer {
+  margin: 0;
+  padding: 10px;
+  border-top: 1px #C5DCE3 solid;
+  background-color: #fff;
+} footer p {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
